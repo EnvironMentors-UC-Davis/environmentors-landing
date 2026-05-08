@@ -4,272 +4,136 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EnvironMentors at UC Davis — Get Involved</title>
-<meta name="description" content="EnvironMentors pairs UC Davis researchers with high school students for one-on-one, year-long environmental research mentorship. Get involved.">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    color: #2a2a2a;
-    background: #fff;
-    line-height: 1.55;
-  }
-
-  /* Top bar */
-  .topbar {
-    background: #002855;
-    color: #fff;
-    padding: 14px 24px;
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-  }
-  .topbar a { color: #DAAA00; text-decoration: none; font-weight: 600; }
-
-  /* Hero */
-  .hero {
-    background: #002855;
-    color: #fff;
-    padding: 0 0 40px 0;
-    position: relative;
-  }
-  .hero::after {
-    content: '';
-    display: block;
-    height: 6px;
-    background: #DAAA00;
-  }
-  .hero-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 24px 0;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 48px;
-    align-items: center;
-  }
-  .hero h1 {
-    font-size: 44px;
-    line-height: 1.1;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin-bottom: 18px;
-  }
-  .hero h1 .gold { color: #DAAA00; }
-  .hero p.lede {
-    font-size: 19px;
-    line-height: 1.5;
-    color: #d0d8e3;
-    margin-bottom: 28px;
-    max-width: 480px;
-  }
-  .hero .cta {
-    display: inline-block;
-    background: #DAAA00;
-    color: #002855;
-    padding: 14px 28px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: transform 0.15s ease;
-  }
-  .hero .cta:hover { transform: translateY(-1px); }
-  .hero-photo {
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
-    aspect-ratio: 4/5;
-    background-size: cover;
-    background-position: center;
-    background-image: url('photos/hero.jpg');
-  }
-
-  /* Body */
-  .body-section {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 64px 24px 32px;
-  }
-  .body-section h2 {
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #DAAA00;
-    margin-bottom: 12px;
-  }
-  .body-section h3 {
-    font-size: 28px;
-    color: #002855;
-    margin-bottom: 20px;
-    line-height: 1.25;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-  }
-  .body-section p {
-    font-size: 17px;
-    line-height: 1.65;
-    margin-bottom: 16px;
-    color: #333;
-  }
-  .body-section .pull {
-    border-left: 4px solid #DAAA00;
-    padding: 4px 0 4px 20px;
-    margin: 24px 0;
-    color: #002855;
-    font-size: 18px;
-    font-style: italic;
-  }
-
-  /* Two-column why section */
-  .why {
-    background: #faf7ed;
-    padding: 56px 0;
-  }
-  .why-grid {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .why-card h4 {
-    font-size: 19px;
-    color: #002855;
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-  .why-card p {
-    font-size: 15.5px;
-    line-height: 1.6;
-    color: #444;
-  }
-
-  /* Photo gallery */
-  .gallery {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 56px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-  }
-  .gallery .tile {
-    aspect-ratio: 4/3;
-    background-size: cover;
-    background-position: center;
-    border-radius: 4px;
-  }
-
-  /* Form */
-  .form-section {
-    background: #002855;
-    padding: 56px 0 72px;
-    color: #fff;
-  }
-  .form-section .form-wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  .form-section h2 {
-    color: #DAAA00;
-    text-align: center;
-    margin-bottom: 6px;
-  }
-  .form-section h3 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 32px;
-    font-weight: 700;
-  }
-  .form-frame {
-    background: #fff;
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  .form-frame iframe {
-    width: 100%;
-    border: 0;
-    display: block;
-  }
-
-  /* Footer */
-  footer {
-    background: #001a3a;
-    color: #aabbcc;
-    padding: 28px 24px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  footer a { color: #DAAA00; text-decoration: none; }
-  footer .seal { font-weight: 700; color: #fff; margin-bottom: 4px; }
-
-  /* Mobile */
-  @media (max-width: 760px) {
-    .hero-grid { grid-template-columns: 1fr; gap: 32px; padding: 40px 24px 0; }
-    .hero h1 { font-size: 34px; }
-    .hero-photo { aspect-ratio: 4/3; max-height: 320px; }
-    .why-grid { grid-template-columns: 1fr; gap: 24px; }
-    .gallery { grid-template-columns: 1fr 1fr; }
-    .body-section h3 { font-size: 24px; }
-    .form-section h3 { font-size: 24px; }
-  }
-</style>
+<meta name="description" content="EnvironMentors pairs UC Davis researchers with high school students for one-on-one, year-long environmental research mentorship. Find your way in.">
+<meta property="og:title" content="EnvironMentors at UC Davis">
+<meta property="og:description" content="Mentor a future scientist. Mentee a real research project. Year-long, free, world-class.">
+<meta property="og:image" content="photos/group-fair.jpg">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="topbar">
-  UC Davis EnvironMentors · <a href="https://environmentors.ucdavis.edu/">environmentors.ucdavis.edu</a>
+  UC Davis EnvironMentors <span class="dot">·</span> <a href="https://environmentors.ucdavis.edu/">environmentors.ucdavis.edu</a>
 </div>
 
-<section class="hero">
-  <div class="hero-grid">
-    <div>
-      <h1>Give your research a <span class="gold">broader impact.</span></h1>
-      <p class="lede">EnvironMentors pairs UC Davis researchers with high school students for one-on-one, year-long environmental research mentorship.</p>
-      <a class="cta" href="#join">Get involved →</a>
+<section class="hero-wrap">
+  <div class="hero-bg" aria-hidden="true">
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <span class="eyebrow">UC Davis · A GCSE Chapter</span>
+    <h1>Real research.<br>
+      <span class="hilite">Real mentorship.</span><br>
+      <span class="leaf">Real impact.</span></h1>
+    <p class="lede">EnvironMentors pairs UC Davis researchers with high school students for one-on-one, year-long environmental science mentorship — culminating at the UC Davis Science Fair and the GCSE International Science Fair.</p>
+
+    <div class="picker-prompt">First, who are you?</div>
+
+    <div class="audience-grid" id="picker">
+      <a class="audience-card" href="audiences/professor.html">
+        <span class="ac-bg" style="background-image:url('photos/poster-mentor.jpg')"></span>
+        <span class="icon">🎓</span>
+        <span class="label">Professor</span>
+        <span class="sub">Faculty / PI</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/postdoc.html">
+        <span class="ac-bg" style="background-image:url('photos/lab-team.jpg')"></span>
+        <span class="icon">🔬</span>
+        <span class="label">Postdoc</span>
+        <span class="sub">Researcher</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/grad.html">
+        <span class="ac-bg" style="background-image:url('photos/lab-science.jpg')"></span>
+        <span class="icon">🧪</span>
+        <span class="label">UC Davis Grad Student</span>
+        <span class="sub">PhD / Master's</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/undergrad.html">
+        <span class="ac-bg" style="background-image:url('photos/greenhouse.jpg')"></span>
+        <span class="icon">📚</span>
+        <span class="label">UC Davis Undergrad</span>
+        <span class="sub">Bachelor's</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/teacher.html">
+        <span class="ac-bg" style="background-image:url('photos/presenting.jpg')"></span>
+        <span class="icon">🍎</span>
+        <span class="label">Teacher</span>
+        <span class="sub">High school educator</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/parent.html">
+        <span class="ac-bg" style="background-image:url('photos/award.jpg')"></span>
+        <span class="icon">🌱</span>
+        <span class="label">Parent</span>
+        <span class="sub">For your student</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/hs-student.html">
+        <span class="ac-bg" style="background-image:url('photos/group-fair.jpg')"></span>
+        <span class="icon">🎒</span>
+        <span class="label">High School Student</span>
+        <span class="sub">Future scientist</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/donor.html">
+        <span class="ac-bg" style="background-image:url('photos/award.jpg')"></span>
+        <span class="icon">💛</span>
+        <span class="label">Donor</span>
+        <span class="sub">Support the work</span>
+        <span class="arrow">Continue →</span>
+      </a>
+      <a class="audience-card" href="audiences/administrator.html">
+        <span class="ac-bg" style="background-image:url('photos/arboretum.jpg')"></span>
+        <span class="icon">🏛️</span>
+        <span class="label">Administrator</span>
+        <span class="sub">Department / unit lead</span>
+        <span class="arrow">Continue →</span>
+      </a>
     </div>
-    <div class="hero-photo" role="img" aria-label="EnvironMentors mentor and student"></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat"><div class="num">20+</div><div class="lbl">Years of program</div></div>
+    <div class="stat"><div class="num">1:1</div><div class="lbl">Mentor pairing</div></div>
+    <div class="stat"><div class="num">Year-long</div><div class="lbl">Sept – May, summer free</div></div>
+    <div class="stat"><div class="num">Free</div><div class="lbl">For students &amp; schools</div></div>
   </div>
 </section>
 
 <section class="body-section">
-  <h2>The program</h2>
-  <h3>Mentor a future scientist. Strengthen the science you do today.</h3>
-  <p>Every year, UC Davis grad students, postdocs, and faculty pair up with high school students from the Sacramento region. Mentees design and run their own environmental research projects, present at the UC Davis Science Fair, and a top cohort travels to the GCSE International Science Fair in Panama.</p>
+  <div class="kicker">The program</div>
+  <h2>Mentor a future scientist. Strengthen the science you do today.</h2>
+  <p>Every year, UC Davis grad students, postdocs, and faculty pair up 1-on-1 with high school students from the Sacramento region. Mentees design and run their own environmental research projects, present at the UC Davis Science Fair, and a top cohort travels to the GCSE International Science Fair.</p>
   <p>For mentors, it's a chance to translate your research into something a teenager can do, see, and own. For your science, it's the broader impact you're already supposed to be building — done in a way that's real instead of performative.</p>
-  <div class="pull">"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills." — Erin Murphy, 2015 Emerging Environmental Leader Award winner</div>
+  <div class="pull">"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills." — Erin Murphy, Emerging Environmental Leader Award winner</div>
 </section>
 
-<section class="why">
-  <div class="why-grid">
-    <div class="why-card">
-      <h4>For faculty</h4>
-      <p>A turnkey way to deliver on the broader-impact requirements that come with NSF, USDA, and most federal grants — without inventing a program from scratch. We handle the mentee side; your lab provides the science.</p>
-    </div>
-    <div class="why-card">
-      <h4>For postdocs, grad students &amp; undergrads</h4>
-      <p>Year-long mentorship that translates directly into job applications, grant biosketches, and the kind of teaching credential search committees actually care about. Bi-weekly meetings, with summer free.</p>
-    </div>
-  </div>
+<section class="gallery" aria-label="Photo gallery">
+  <div class="tile t1" style="background-image:url('photos/group-fair.jpg')" role="img" aria-label="EnvironMentors cohort at the GCSE International Science Fair"></div>
+  <div class="tile t2" style="background-image:url('photos/poster-mentor.jpg')" role="img" aria-label="Mentor and student discussing research poster"></div>
+  <div class="tile t3" style="background-image:url('photos/lab-team.jpg')" role="img" aria-label="Students working together in a UC Davis lab"></div>
+  <div class="tile t4" style="background-image:url('photos/farm.jpg')" role="img" aria-label="Students at the UC Davis student farm"></div>
+  <div class="tile t5" style="background-image:url('photos/lab-science.jpg')" role="img" aria-label="Student conducting laboratory analysis"></div>
+  <div class="tile t6" style="background-image:url('photos/award.jpg')" role="img" aria-label="Mentee receiving an award certificate"></div>
+  <div class="tile t7" style="background-image:url('photos/arboretum.jpg')" role="img" aria-label="UC Davis Arboretum"></div>
 </section>
 
-<section class="gallery">
-  <div class="tile" style="background-image:url('photos/gallery1.jpg')" role="img" aria-label="EnvironMentors mentees"></div>
-  <div class="tile" style="background-image:url('photos/gallery2.jpg')" role="img" aria-label="Students at UC Davis research vessel"></div>
-  <div class="tile" style="background-image:url('photos/gallery3.jpg')" role="img" aria-label="Mentee in greenhouse"></div>
-</section>
-
-<section class="form-section" id="join">
+<section class="form-section" id="learn-more">
   <div class="form-wrap">
-    <h2>Get involved</h2>
-    <h3>Drop your info — we'll be in touch.</h3>
+    <div class="kicker">Learn more</div>
+    <h2>Drop your info — we'll be in touch.</h2>
+    <p class="sub">Or scroll back up and pick the path that fits you best.</p>
     <div class="form-frame">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3fdZ-yH0klDL1bemUlo8f9IML4VVD8XwCSvVxNgeBMHHSXA/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3fdZ-yH0klDL1bemUlo8f9IML4VVD8XwCSvVxNgeBMHHSXA/viewform?embedded=true" height="1100" frameborder="0">Loading…</iframe>
     </div>
   </div>
 </section>
