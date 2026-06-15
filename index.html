@@ -1,146 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EnvironMentors at UC Davis — Get Involved</title>
-<meta name="description" content="EnvironMentors pairs UC Davis researchers with high school students for one-on-one, year-long environmental research mentorship. Find your way in.">
+<meta name="description" content="EnvironMentors pairs Sacramento-area high schoolers with UC Davis researchers for a year of real environmental research. Sign up for more info.">
 <meta property="og:title" content="EnvironMentors at UC Davis">
-<meta property="og:description" content="Mentor a future scientist. Mentee a real research project. Year-long, free, world-class.">
+<meta property="og:description" content="Real environmental research. With a UC Davis scientist. For a year.">
 <meta property="og:image" content="photos/group-fair.jpg">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-<div class="topbar">
-  UC Davis EnvironMentors <span class="dot">·</span> <a href="https://environmentors.ucdavis.edu/">environmentors.ucdavis.edu</a>
+<div class="top">
+  <span class="mark">UC&nbsp;Davis EnvironMentors</span>
+  <span class="nav">
+    <a href="#how">How it works</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a class="cta" href="#signup">Sign up&nbsp;&rsaquo;</a>
+  </span>
 </div>
 
-<section class="hero-wrap">
-  <div class="hero-bg" aria-hidden="true">
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
+<section class="hero">
+  <div class="eyebrow">UC Davis &middot; A GCSE Chapter</div>
+  <h1 class="serif">Real environmental research. With a <em>UC&nbsp;Davis scientist.</em> For a year.</h1>
+  <p class="lede">EnvironMentors pairs Sacramento-area high schoolers with UC&nbsp;Davis researchers. You pick the question, run the project, and present it at the UC&nbsp;Davis Science Fair.</p>
+  <div class="cta-row">
+    <a class="btn" href="#signup">Sign up for more info</a>
+    <span class="note">Free. No experience needed. For high schoolers and the researchers who want to mentor them.</span>
   </div>
-  <div class="hero-veil" aria-hidden="true"></div>
+</section>
 
-  <div class="hero-inner">
-    <span class="eyebrow">UC Davis · A GCSE Chapter</span>
-    <h1>Pair a high schooler with<br>
-      <span class="hilite">a UC Davis scientist</span><br>
-      for the school year.</h1>
-    <p class="lede">EnvironMentors is a year-long environmental research mentorship. UC Davis grad students, postdocs, and faculty work one-on-one with Sacramento-area high school students. Mentees design and run their own projects and present at the UC Davis Science Fair in spring.</p>
+<div class="heroimg wrap">
+  <div class="frame"></div>
+  <div class="cap">A mentee and mentor talk through a research poster before the spring fair.</div>
+</div>
 
-    <div class="picker-prompt">First, who are you?</div>
+<section class="specs">
+  <div class="wrap">
+    <div class="spec"><div class="n serif">1&#8202;:&#8202;1</div><div class="l">Mentor pairing</div></div>
+    <div class="spec"><div class="n serif">Free</div><div class="l">Students &amp; schools</div></div>
+    <div class="spec"><div class="n serif">Sept&ndash;June</div><div class="l">The school year</div></div>
+    <div class="spec"><div class="n serif">GCSE</div><div class="l">National chapter</div></div>
+  </div>
+</section>
 
-    <div class="audience-grid" id="picker">
-      <a class="audience-card" href="audiences/professor.html">
-        <span class="ac-bg" style="background-image:url('photos/poster-mentor.jpg')"></span>
-        <span class="icon">🎓</span>
-        <span class="label">Professor</span>
-        <span class="sub">Faculty / PI</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/postdoc.html">
-        <span class="ac-bg" style="background-image:url('photos/lab-team.jpg')"></span>
-        <span class="icon">🔬</span>
-        <span class="label">Postdoc</span>
-        <span class="sub">Researcher</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/grad.html">
-        <span class="ac-bg" style="background-image:url('photos/lab-science.jpg')"></span>
-        <span class="icon">🧪</span>
-        <span class="label">UC Davis Grad Student</span>
-        <span class="sub">PhD / Master's</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/undergrad.html">
-        <span class="ac-bg" style="background-image:url('photos/greenhouse.jpg')"></span>
-        <span class="icon">📚</span>
-        <span class="label">UC Davis Undergrad</span>
-        <span class="sub">Bachelor's</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/teacher.html">
-        <span class="ac-bg" style="background-image:url('photos/presenting.jpg')"></span>
-        <span class="icon">🍎</span>
-        <span class="label">Teacher</span>
-        <span class="sub">High school educator</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/parent.html">
-        <span class="ac-bg" style="background-image:url('photos/award.jpg')"></span>
-        <span class="icon">🌱</span>
-        <span class="label">Parent</span>
-        <span class="sub">For your student</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/hs-student.html">
-        <span class="ac-bg" style="background-image:url('photos/group-fair.jpg')"></span>
-        <span class="icon">🎒</span>
-        <span class="label">High School Student</span>
-        <span class="sub">Future scientist</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/donor.html">
-        <span class="ac-bg" style="background-image:url('photos/award.jpg')"></span>
-        <span class="icon">💛</span>
-        <span class="label">Donor</span>
-        <span class="sub">Support the work</span>
-        <span class="arrow">Continue →</span>
-      </a>
-      <a class="audience-card" href="audiences/administrator.html">
-        <span class="ac-bg" style="background-image:url('photos/arboretum.jpg')"></span>
-        <span class="icon">🏛️</span>
-        <span class="label">Administrator</span>
-        <span class="sub">Department / unit lead</span>
-        <span class="arrow">Continue →</span>
-      </a>
+<section class="how" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3 class="serif">Get matched</h3><p>You're paired one-on-one with a UC&nbsp;Davis grad student, postdoc, or faculty mentor in environmental science.</p></div>
+      <div class="step"><div class="num">02</div><h3 class="serif">Run your project</h3><p>You pick a question that actually matters to you, then design and run the study across the year.</p></div>
+      <div class="step"><div class="num">03</div><h3 class="serif">Present your science</h3><p>Show your work at the UC&nbsp;Davis Science Fair. A top group goes on to the GCSE International Fair, fully covered.</p></div>
     </div>
   </div>
 </section>
 
-<section class="stats">
-  <div class="stats-grid">
-    <div class="stat"><div class="num">1:1</div><div class="lbl">Mentor pairing</div></div>
-    <div class="stat"><div class="num">Sept – May</div><div class="lbl">Bi-weekly meetings</div></div>
-    <div class="stat"><div class="num">Free</div><div class="lbl">For students &amp; schools</div></div>
-    <div class="stat"><div class="num">GCSE</div><div class="lbl">National network chapter</div></div>
+<section class="quote">
+  <div class="wrap">
+    <blockquote class="serif">"Thanks to the program and my mentor, I feel prepared with my speaking skills and confident in my research and writing."</blockquote>
+    <cite>Erin Murphy &middot; EnvironMentors alum</cite>
   </div>
 </section>
 
-<section class="body-section">
-  <h2>How it works.</h2>
-  <p>Each year we match Sacramento-area high school students with UC Davis researchers as mentors. Pairs meet every other week, scope a research project the student picks, and the student runs it through the school year.</p>
-  <p>In May, mentees present at the UC Davis Science Fair. A top cohort travels to the GCSE International Science Fair as a group, fully covered. Then summer's off.</p>
-  <div class="pull">"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills." — Erin Murphy, EnvironMentors alum</div>
-</section>
-
-<section class="gallery" aria-label="Photo gallery">
-  <div class="tile t1" style="background-image:url('photos/group-fair.jpg')" role="img" aria-label="EnvironMentors cohort at the GCSE International Science Fair"></div>
-  <div class="tile t2" style="background-image:url('photos/poster-mentor.jpg')" role="img" aria-label="Mentor and student discussing research poster"></div>
-  <div class="tile t3" style="background-image:url('photos/lab-team.jpg')" role="img" aria-label="Students working together in a UC Davis lab"></div>
-  <div class="tile t4" style="background-image:url('photos/farm.jpg')" role="img" aria-label="Students at the UC Davis student farm"></div>
-  <div class="tile t5" style="background-image:url('photos/lab-science.jpg')" role="img" aria-label="Student conducting laboratory analysis"></div>
-  <div class="tile t6" style="background-image:url('photos/award.jpg')" role="img" aria-label="Mentee receiving an award certificate"></div>
-  <div class="tile t7" style="background-image:url('photos/arboretum.jpg')" role="img" aria-label="UC Davis Arboretum"></div>
-</section>
-
-<section class="form-section" id="learn-more">
+<section class="signup" id="signup">
+  <div class="eyebrow">Get involved</div>
+  <h2 class="serif">Tell us a little about you, and we'll be in touch.</h2>
+  <p>Whether you're a student, a parent, or a UC&nbsp;Davis researcher who wants to mentor, this is the place to start.</p>
   <div class="form-wrap">
-    <div class="kicker">Learn more</div>
-    <h2>Drop your info — we'll be in touch.</h2>
-    <p class="sub">Or scroll back up and pick the path that fits you best.</p>
-    <div class="form-frame">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3fdZ-yH0klDL1bemUlo8f9IML4VVD8XwCSvVxNgeBMHHSXA/viewform?embedded=true" height="1100" frameborder="0">Loading…</iframe>
-    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3fdZ-yH0klDL1bemUlo8f9IML4VVD8XwCSvVxNgeBMHHSXA/viewform?embedded=true" height="1100" title="EnvironMentors interest form">Loading the form&hellip;</iframe>
   </div>
 </section>
 
 <footer>
-  <div class="seal">UC Davis EnvironMentors</div>
-  <div>A chapter of <a href="https://gcseglobal.org/">GCSE Global</a> · <a href="https://environmentors.ucdavis.edu/">environmentors.ucdavis.edu</a></div>
+  <div class="wrap">
+    <span>UC&nbsp;Davis EnvironMentors &middot; A chapter of <a href="https://gcseglobal.org/">GCSE Global</a></span>
+    <span class="links">
+      <a href="https://environmentors.ucdavis.edu/">Main site</a>
+      <a href="https://www.instagram.com/environmentors.ucdavis/">Instagram</a>
+      <a href="https://gcseglobal.org/">GCSE Global</a>
+    </span>
+  </div>
 </footer>
 
-</body>
-</html>
+</body></html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EnvironMentors — Direction 1: Editorial</title>
+<style>
+:root{
+  --ink:#16130d; --ink2:#5b5346; --paper:#f7f3ea; --line:#ddd3bf;
+  --accent:#1f4d2e; --accent2:#b9882f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 40px}
+
+/* top */
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 40px;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.5px}
+.top .mark{font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.top a{color:var(--ink);text-decoration:none}
+.top .nav a{margin-left:26px;color:var(--ink2)}
+.top .nav a.cta{color:var(--accent);font-weight:700}
+
+/* hero */
+.hero{padding:84px 40px 64px;max-width:1120px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:26px}
+.hero h1{font-size:clamp(40px,6.6vw,82px);line-height:1.02;font-weight:400;letter-spacing:-.5px;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lede{font-size:clamp(17px,1.6vw,21px);color:var(--ink2);max-width:60ch;margin-top:30px;line-height:1.55}
+.cta-row{display:flex;align-items:center;gap:22px;margin-top:38px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:15px 30px;border-radius:2px;letter-spacing:.3px}
+.cta-row .note{font-size:14px;color:var(--ink2);max-width:34ch}
+
+/* hero image */
+.heroimg{margin-top:56px}
+.heroimg .frame{width:100%;height:clamp(280px,42vw,520px);background-image:url('../photos/poster-mentor.jpg');background-size:cover;background-position:center 30%;border-radius:3px}
+.heroimg .cap{font-size:12.5px;color:var(--ink2);letter-spacing:.4px;margin-top:10px}
+
+/* specs */
+.specs{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px}
+.specs .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.spec{padding:30px 0}
+.spec + .spec{border-left:1px solid var(--line);padding-left:30px}
+.spec .n{font-size:30px;font-weight:400;letter-spacing:-.5px}
+.spec .l{font-size:12.5px;letter-spacing:1px;text-transform:uppercase;color:var(--ink2);margin-top:6px}
+
+/* how */
+.how{padding:78px 40px}
+.how h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:40px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.step .num{font-size:14px;color:var(--accent2);font-weight:700;letter-spacing:1px}
+.step h3{font-size:24px;font-weight:400;margin:12px 0 10px}
+.step p{font-size:15.5px;color:var(--ink2)}
+
+/* quote */
+.quote{background:var(--ink);color:#f3ecdc;padding:90px 40px}
+.quote .wrap{max-width:900px}
+.quote blockquote{font-size:clamp(24px,3vw,36px);line-height:1.3;font-weight:400}
+.quote cite{display:block;margin-top:24px;font-style:normal;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:#b9a87e}
+
+/* signup */
+.signup{padding:84px 40px;text-align:center}
+.signup .eyebrow{margin-bottom:18px}
+.signup h2{font-size:clamp(30px,4vw,48px);font-weight:400;letter-spacing:-.5px;max-width:18ch;margin:0 auto}
+.signup p{color:var(--ink2);margin:18px auto 34px;max-width:48ch;font-size:16px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:36px 40px;font-size:13.5px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{color:var(--ink);text-decoration:none}
+footer .links a{margin-left:22px}
+@media(max-width:760px){.steps,.specs .wrap{grid-template-columns:1fr}.spec+.spec{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
+</style></head>
+<body>
+
+<div class="top">
+  <span class="mark">UC&nbsp;Davis EnvironMentors</span>
+  <span class="nav">
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a class="cta" href="#signup">Sign up&nbsp;&rsaquo;</a>
+  </span>
+</div>
+
+<section class="hero">
+  <div class="eyebrow">UC Davis &middot; A GCSE Chapter</div>
+  <h1 class="serif">Real environmental research. With a <em>UC&nbsp;Davis scientist.</em> For a year.</h1>
+  <p class="lede">EnvironMentors pairs Sacramento-area high schoolers with UC&nbsp;Davis researchers. You pick the question, run the project, and present it at the UC&nbsp;Davis Science Fair.</p>
+  <div class="cta-row">
+    <a class="btn" href="#signup">Sign up for more info</a>
+    <span class="note">Free. No experience needed. For high schoolers and the researchers who want to mentor them.</span>
+  </div>
+</section>
+
+<div class="heroimg wrap">
+  <div class="frame"></div>
+  <div class="cap">A mentee and mentor talk through a research poster before the spring fair.</div>
+</div>
+
+<section class="specs">
+  <div class="wrap">
+    <div class="spec"><div class="n serif">1&#8202;:&#8202;1</div><div class="l">Mentor pairing</div></div>
+    <div class="spec"><div class="n serif">Free</div><div class="l">Students &amp; schools</div></div>
+    <div class="spec"><div class="n serif">Sept&ndash;May</div><div class="l">The school year</div></div>
+    <div class="spec"><div class="n serif">GCSE</div><div class="l">National chapter</div></div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3 class="serif">Get matched</h3><p>You're paired one-on-one with a UC&nbsp;Davis grad student, postdoc, or faculty mentor in environmental science.</p></div>
+      <div class="step"><div class="num">02</div><h3 class="serif">Run your project</h3><p>You pick a question that actually matters to you, then design and run the study across the year.</p></div>
+      <div class="step"><div class="num">03</div><h3 class="serif">Present your science</h3><p>Show your work at the UC&nbsp;Davis Science Fair. A top group goes on to the GCSE International Fair, fully covered.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote class="serif">"Thanks to the program and my mentor, I feel prepared with my speaking skills and confident in my research and writing."</blockquote>
+    <cite>Erin Murphy &middot; EnvironMentors alum</cite>
+  </div>
+</section>
+
+<section class="signup" id="signup">
+  <div class="eyebrow">Get involved</div>
+  <h2 class="serif">Tell us a little about you, and we'll be in touch.</h2>
+  <p>Whether you're a student, a parent, or a UC&nbsp;Davis researcher who wants to mentor, this is the place to start.</p>
+  <a class="btn" href="#">Sign up for more info</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>UC&nbsp;Davis EnvironMentors &middot; A chapter of GCSE Global</span>
+    <span class="links"><a href="#">Main site</a><a href="#">Instagram</a><a href="#">GCSE Global</a></span>
+  </div>
+</footer>
+
+</body></html>
