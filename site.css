@@ -144,6 +144,9 @@ img{max-width:100%;display:block}
 .article figcaption{font-size:12.5px;color:var(--ink2);margin-top:9px}
 .article p{font-size:17px;line-height:1.75;margin-top:20px;color:var(--ink)}
 .article h2{font-size:24px;font-weight:600;margin-top:42px;letter-spacing:-.3px}
+.article .figrow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:34px 0}
+.article .figrow figure{margin:0}
+@media(max-width:600px){.article .figrow{grid-template-columns:1fr}}
 .article .thanks{font-size:15px;color:var(--ink2);border-top:1px solid var(--line);margin-top:48px;padding-top:24px;line-height:1.75}
 .article a{color:var(--accent)}
 @media(max-width:760px){.article{padding:44px 24px 60px}.article p{font-size:16px}}
