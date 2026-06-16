@@ -50,6 +50,11 @@ img{max-width:100%;display:block}
 .step h3{font-size:24px;font-weight:400;margin:12px 0 10px}
 .step p{font-size:15.5px;color:var(--ink2)}
 
+/* track record */
+.record{padding:74px 40px;border-top:1px solid var(--line)}
+.record h2{font-size:clamp(28px,3.6vw,42px);font-weight:400;letter-spacing:-.5px;margin:0;max-width:16ch}
+.record p{font-size:16.5px;color:var(--ink2);max-width:64ch;margin-top:20px;line-height:1.6}
+
 /* quote */
 .quote{background:var(--ink);color:#f3ecdc;padding:90px 40px}
 .quote .wrap{max-width:900px}
