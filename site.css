@@ -61,6 +61,30 @@ img{max-width:100%;display:block}
 .quote .quotes figcaption{margin-top:18px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#b9a87e}
 @media(max-width:760px){.quote .quotes{grid-template-columns:1fr;gap:34px}}
 
+/* testimonial carousel */
+.carousel{position:relative;display:flex;align-items:center;gap:10px}
+.car-viewport{overflow:hidden;flex:1}
+.car-track{display:flex;transition:transform .45s ease}
+.slide{flex:0 0 100%;margin:0;padding:0 10px;text-align:center}
+.slide blockquote{font-size:clamp(19px,2.3vw,29px);line-height:1.36;font-weight:400;max-width:46ch;margin:0 auto;font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+.slide figcaption{margin-top:22px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#b9a87e}
+.car-arrow{flex:0 0 auto;background:none;border:1px solid rgba(255,255,255,.32);color:#f3ecdc;width:44px;height:44px;border-radius:50%;font-size:20px;line-height:1;cursor:pointer;transition:border-color .2s,color .2s}
+.car-arrow:hover{border-color:#cdb98a;color:#fff}
+.car-dots{display:flex;justify-content:center;gap:9px;margin-top:30px}
+.car-dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.28);cursor:pointer;padding:0}
+.car-dots button.active{background:#cdb98a}
+@media(max-width:760px){.car-arrow{width:36px;height:36px;font-size:17px}.slide blockquote{font-size:19px}}
+
+/* department ticker */
+.ticker{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;overflow:hidden}
+.ticker .lab{text-align:center;font-size:11.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink2);margin-bottom:16px}
+.ticker .marquee{display:flex;width:max-content;animation:ticker 48s linear infinite}
+.ticker:hover .marquee{animation-play-state:paused}
+.ticker .item{display:inline-flex;align-items:center;font-size:15px;color:var(--ink);white-space:nowrap;padding:0 24px;border-right:1px solid var(--line)}
+.ticker .item::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:12px;opacity:.7}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker .marquee{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:6px}}
+
 /* signup + embedded form */
 .signup{padding:84px 40px 30px;text-align:center}
 .signup .eyebrow{margin-bottom:18px}

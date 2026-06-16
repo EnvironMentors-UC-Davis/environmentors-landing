@@ -44,6 +44,36 @@
   </div>
 </section>
 
+<section class="ticker" aria-label="UC Davis departments involved">
+  <div class="lab">Mentors come from across UC&nbsp;Davis</div>
+  <div class="marquee">
+    <span class="item">Plant Sciences</span>
+    <span class="item">Land, Air &amp; Water Resources</span>
+    <span class="item">Agricultural &amp; Resource Economics</span>
+    <span class="item">Animal Science</span>
+    <span class="item">Environmental Toxicology</span>
+    <span class="item">Evolution &amp; Ecology</span>
+    <span class="item">Wildlife, Fish &amp; Conservation Biology</span>
+    <span class="item">Entomology &amp; Nematology</span>
+    <span class="item">Food Science &amp; Technology</span>
+    <span class="item">Civil &amp; Environmental Engineering</span>
+    <span class="item">Environmental Science &amp; Policy</span>
+    <span class="item">Earth &amp; Planetary Sciences</span>
+    <span class="item" aria-hidden="true">Plant Sciences</span>
+    <span class="item" aria-hidden="true">Land, Air &amp; Water Resources</span>
+    <span class="item" aria-hidden="true">Agricultural &amp; Resource Economics</span>
+    <span class="item" aria-hidden="true">Animal Science</span>
+    <span class="item" aria-hidden="true">Environmental Toxicology</span>
+    <span class="item" aria-hidden="true">Evolution &amp; Ecology</span>
+    <span class="item" aria-hidden="true">Wildlife, Fish &amp; Conservation Biology</span>
+    <span class="item" aria-hidden="true">Entomology &amp; Nematology</span>
+    <span class="item" aria-hidden="true">Food Science &amp; Technology</span>
+    <span class="item" aria-hidden="true">Civil &amp; Environmental Engineering</span>
+    <span class="item" aria-hidden="true">Environmental Science &amp; Policy</span>
+    <span class="item" aria-hidden="true">Earth &amp; Planetary Sciences</span>
+  </div>
+</section>
+
 <section class="how" id="how">
   <div class="wrap">
     <h2>How it works</h2>
@@ -55,16 +85,23 @@
   </div>
 </section>
 
-<section class="quote">
-  <div class="wrap quotes">
-    <figure>
-      <blockquote class="serif">"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills."</blockquote>
-      <figcaption>Erin Murphy &middot; EnvironMentors mentee</figcaption>
-    </figure>
-    <figure>
-      <blockquote class="serif">"I joined EnvironMentors to bring my background in agricultural and soil science into a mentoring environment where students can see how the chemistry and biology concepts they learn in class translate into meaningful research."</blockquote>
-      <figcaption>Maya Shydlowski &middot; UC&nbsp;Davis mentor</figcaption>
-    </figure>
+<section class="quote" id="voices">
+  <div class="wrap">
+    <div class="carousel">
+      <button class="car-arrow prev" aria-label="Previous testimonial">&lsaquo;</button>
+      <div class="car-viewport">
+        <div class="car-track">
+          <figure class="slide"><blockquote>"The program has elevated my interest in environmental science by pushing me to be more confident in my data analysis and poster presentation skills. Without joining EnvironMentors, I would not have gained the valuable research skills that I can now take with me to college…"</blockquote><figcaption>Anna Callens &middot; Mentee, Pioneer High School</figcaption></figure>
+          <figure class="slide"><blockquote>"She had her own project idea, and I've been following her lead on it. She comes to every meeting more and more prepared. It's amazing to watch how her scientific muscle is growing."</blockquote><figcaption>Gal Koss &middot; Mentor, PhD candidate</figcaption></figure>
+          <figure class="slide"><blockquote>"I read that by 2050, salt levels will more than double in groundwater, so I thought that with this research, we can try to find solutions to that problem. By using the greenhouses, I feel like I'm learning a lot."</blockquote><figcaption>Mudasser Ahmed &middot; Mentee, 11th grade</figcaption></figure>
+          <figure class="slide"><blockquote>"I think a mentorship program, in which I can tell her about my experience and my story, is helpful to make decisions about her career. This group of mentees and mentors, forming this community on campus, is super valuable for anyone."</blockquote><figcaption>Marie Klein &middot; Mentor, postdoctoral researcher</figcaption></figure>
+          <figure class="slide"><blockquote>"I joined EnvironMentors to bring my background in agricultural and soil science into a mentoring environment where students can see how the chemistry and biology concepts they learn in class translate into meaningful research."</blockquote><figcaption>Maya Shydlowski &middot; Mentor, soil science</figcaption></figure>
+          <figure class="slide"><blockquote>"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills."</blockquote><figcaption>Erin Murphy &middot; Mentee, Environmental Leader Award winner</figcaption></figure>
+        </div>
+      </div>
+      <button class="car-arrow next" aria-label="Next testimonial">&rsaquo;</button>
+    </div>
+    <div class="car-dots" aria-hidden="true"></div>
   </div>
 </section>
 
@@ -123,6 +160,25 @@
   });
   lb.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+
+// testimonial carousel
+(function(){
+  var track=document.querySelector('.car-track');
+  if(!track) return;
+  var slides=track.children, n=slides.length, i=0;
+  var dotsWrap=document.querySelector('.car-dots'), timer;
+  for(var d=0; d<n; d++){var b=document.createElement('button'); b.setAttribute('data-i',d); b.setAttribute('aria-label','Go to testimonial '+(d+1)); dotsWrap.appendChild(b);}
+  var dots=dotsWrap.children;
+  function go(k){ i=(k+n)%n; track.style.transform='translateX('+(-i*100)+'%)'; for(var j=0;j<n;j++) dots[j].className=(j===i?'active':''); }
+  function reset(){ clearInterval(timer); timer=setInterval(function(){go(i+1);},8000); }
+  document.querySelector('.car-arrow.next').addEventListener('click',function(){go(i+1);reset();});
+  document.querySelector('.car-arrow.prev').addEventListener('click',function(){go(i-1);reset();});
+  dotsWrap.addEventListener('click',function(e){var k=e.target.getAttribute('data-i'); if(k!==null){go(+k);reset();}});
+  var x0=null, vp=document.querySelector('.car-viewport');
+  vp.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+  vp.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null;reset();});
+  go(0); reset();
 })();
 </script>
 
