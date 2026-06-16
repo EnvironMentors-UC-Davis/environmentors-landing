@@ -16,7 +16,7 @@ img{max-width:100%;display:block}
 .top a{color:var(--ink);text-decoration:none}
 .top .nav a{margin-left:26px;color:var(--ink2)}
 .top .nav a:hover{color:var(--ink)}
-.top .nav a.cta{color:var(--accent);font-weight:700}
+.top .nav a.cta{color:var(--accent);font-weight:800}
 
 /* hero */
 .hero{padding:84px 40px 64px;max-width:1120px;margin:0 auto}
